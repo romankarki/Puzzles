@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  /* --primary-color: #93cb52;
+  --secondary-color: #7ab436; */
+  --primary-color: #279af1;
+  --secondary-color: #0077b6;
+}
+
+/* utilities */
+.btn {
+  background: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.65rem 0.9rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: var(--secondary-color);
+  font-weight: bolder;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+center-heading {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  letter-spacing: 3px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-left: 30px;
+}
+.highlight {
+  color: var(--primary-color);
+}
+#navbar .nav-items {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  padding: 1rem;
+}
+#navbar .nav-items li {
+  list-style: none;
+}
+#navbar .nav-items li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+#navbar .nav-items li a:hover {
+  background: var(--primary-color);
+}
+#navbar .nav-items li .current {
+  background: var(--primary-color);
+  border-bottom: 2px solid brown;
+}
+
+/* Showcase  */
+#showcase {
+  background: url("../img/adult-business-computer-contemporary-380769.jpg")
+    no-repeat center center/cover;
+
+  height: 70vh;
+  color: white;
+  position: relative;
+}
+#showcase #showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  /* overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#showcase #showcase-content > .title {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 0 1rem 2rem 1rem;
+}
+
+/* Work section */
+#work {
+  background-color: #f4f4f4;
+  padding: 1.5rem 0;
+}
+
+#work .items {
+  display: flex;
+  padding: 1rem;
+}
+#work .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#work .items .item i {
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* about section */
+
+#about {
+  display: flex;
+
+  height: 50vh;
+}
+#about #about-image {
+  background-color: red;
+  background: url("../img/business-chairs-company-coworking-7070.jpg") no-repeat
+    center center/cover;
+  height: 100%;
+  width: 50vw;
+}
+
+#about #about-content {
+  background-color: #333;
+  width: 50vw;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  color: white;
+}
+#about #about-content p {
+  text-align: justify;
+  margin: 3rem 3rem;
+}
+
+/* team section */
+
+#team {
+  display: flex;
+  height: 80vh;
+  background: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+#team #team-image {
+  background: url("../img/photo-of-people-near-wooden-table-3184431.jpg")
+    no-repeat center/cover;
+  height: 50vh;
+  width: 30vw;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+#team #team-members {
+  width: 70vw;
+  /* background: red; */
+  padding: 3rem 2rem;
+}
+#team #team-members .card-container {
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#team #team-members .card-container .card {
+  background: var(--primary-color);
+  margin-bottom: 1rem;
+  padding-right: 0px;
+  padding: 1rem;
+  border-radius: 10px;
+  opacity: 0.8;
+  display: flex;
+  height: 100%;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+#team #team-members .card-container .card img {
+  border-radius: 50%;
+  height: 10vh;
+  width: 10vh;
+}
+/* contact section */
+
+#contact {
+  display: flex;
+  height: 60vh;
+  border-top: 1px dotted gray;
+}
+
+#contact #contact-form {
+  width: 50vw;
+  background: #f4f4f4;
+  color: #333;
+  align-items: center;
+}
+
+#contact #contact-details {
+  background: #333;
+  width: 50vw;
+  color: white;
+  padding-top: 2rem;
+}
+#contact #contact-details .contact-logo {
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted gray;
+}
+
+#contact #contact-details .contact-mail {
+  margin-top: 1.5rem;
+}
+#contact #contact-details .contact-mail > div:first-child {
+  margin: 1.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted gray;
+}
+#contact #contact-details .contact-mail > div p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+/* form only contact */
+#contact #contact-form {
+  padding: 1rem 2rem;
+}
+#contact #contact-form p {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#contact #contact-form form .form-group input,
+#contact #contact-form form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 2px;
+}
+#contact #contact-form form .form-group textarea {
+  height: 80px;
+  margin-bottom: 0;
+}
+#contact #contact-form form .form-group .btn {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  margin-left: 2%;
+}
+
+/* footer
+ */
+#footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1rem 0;
+  border-top: 1px dotted gray;
+}
+
+/* Tablet sized Device */
+@media (max-width: 1100px) {
+  #about {
+    height: 35vh;
+  }
+
+  #team {
+    display: block;
+    height: 70vh;
+    padding: 0;
+  }
+  #team #team-image {
+    display: none;
+  }
+  #team #team-members {
+    width: 100vw;
+    padding: 2rem 1rem;
+  }
+  #team #team-members .card-container .card {
+    padding: 0.1rem;
+    width: 100%;
+  }
+
+  #contact {
+    height: 60vh;
+  }
+}
+@media (max-width: 1100px) and (min-height: 813px) {
+  #team {
+    height: 45vh;
+  }
+  #contact {
+    height: 40vh;
+  }
+}
+
+/* for mobiles in landscape modes */
+
+@media (max-width: 819px) and (max-height: 500px) {
+  #about,
+  #team,
+  #showcase {
+    height: 100vh;
+  }
+  #contact {
+    height: 120vh;
+  }
+}
+
+/* for mobiles in portrait mode */
+@media (max-width: 600px) and (min-height: 501px) {
+  #navbar {
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  #navbar .nav-items li a {
+    font-size: 0.8rem;
+  }
+
+  /* showcase */
+  #showcase {
+    height: 70vh;
+  }
+  #showcase #showcase-content > .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  #showcase #showcase-content > p {
+    margin: 0 1rem;
+  }
+
+  #work .items {
+    flex-direction: column;
+  }
+  #work .items .item {
+    border-bottom: 1px dotted gray;
+  }
+  #work .items .item:last-child {
+    border-bottom: none;
+  }
+
+  #about {
+    flex-direction: column;
+    height: 90vh;
+  }
+  #about #about-content,
+  #about #about-image {
+    width: 100vw;
+  }
+  /* Team */
+  #team {
+    margin-bottom: 0;
+    height: 50vh;
+  }
+  #team #team-image {
+    display: none;
+  }
+  #team #team-members {
+    margin-bottom: 0;
+  }
+  #team #team-members .card-container .card p {
+    font-size: 0.7rem;
+  }
+  /* Contact */
+  #contact {
+    flex-direction: column-reverse;
+    height: 90vh;
+  }
+  #contact #contact-details,
+  #contact #contact-form {
+    width: 100vw;
+  }
+  #contact #contact-details {
+    padding-bottom: 1rem;
+  }
+  #contact #contact-form {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 325px) {
+  #team {
+    height: 100vh;
+  }
+}
+
+@media (max-height: 700px) and (min-height: 600px) and (max-width: 375px) {
+  #team {
+    height: 80vh;
+  }
+}
+
+@media (min-height: 700px) and (max-height: 750px) and (max-width: 420px) {
+  #team {
+    height: 70vh;
+  }
+}
