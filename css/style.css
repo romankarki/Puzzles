@@ -429,7 +429,7 @@ h2 {
 
 @media (max-height: 800px) and (max-width: 420px) {
   #team {
-    height: 100vh;
+    height: 90vh;
   }
 }
 
