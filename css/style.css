@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 :root {
   /* --primary-color: #93cb52;
@@ -354,6 +355,8 @@ h2 {
 @media (max-width: 600px) and (min-height: 501px) {
   #navbar {
     flex-direction: column;
+    position: sticky;
+    top: 0;
   }
   .logo {
     text-align: center;
@@ -424,13 +427,13 @@ h2 {
   }
 }
 
-@media (max-height: 600px) and (max-width: 325px) {
+@media (max-height: 800px) and (max-width: 420px) {
   #team {
     height: 100vh;
   }
 }
 
-@media (max-height: 700px) and (min-height: 600px) and (max-width: 375px) {
+/* @media (max-height: 700px) and (min-height: 600px) and (max-width: 375px) {
   #team {
     height: 80vh;
   }
@@ -440,4 +443,4 @@ h2 {
   #team {
     height: 70vh;
   }
-}
+} */
